@@ -1,189 +1,341 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#111212">
-    <meta name="description" content="エンジニアのポートフォリオ。学びながら、手を動かして、形にする。">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111212" />
+    <meta
+      name="description"
+      content="エンジニアのポートフォリオ。学びながら、手を動かして、形にする。"
+    />
     <title>SATO OTSUKA — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  </head>
 
-<body>
+  <body>
     <div class="loader" aria-hidden="true">
-        <div class="loader-mark">SO<span>.</span></div>
-        <div class="loader-line"><i></i></div>
-        <p>BUILDING MY PORTFOLIO</p>
+      <div class="loader-mark">SO<span>.</span></div>
+      <div class="loader-line"><i></i></div>
+      <p>BUILDING MY PORTFOLIO</p>
     </div>
     <header class="topbar">
-        <a class="brand" href="#top" aria-label="トップへ"><span class="brand-icon">Y</span><span>SATO OTSUKA<span
-                    class="brand-dot">.</span></span></a>
-        <nav aria-label="メインナビゲーション"><a href="#about">ABOUT</a><a href="#works">WORKS</a><a href="#skills">SKILLS</a><a
-                href="#contact">CONTACT</a></nav>
-        <a class="availability" href="#contact"><i></i> AVAILABLE FOR WORK</a>
-        <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
+      <a class="brand" href="#top" aria-label="トップへ"
+        ><span class="brand-icon" aria-hidden="true">SO</span
+        ><span>SATO OTSUKA<span class="brand-dot">.</span></span></a
+      >
+      <nav aria-label="メインナビゲーション">
+        <a href="#top">TOP</a><a href="works.html">WORKS</a
+        ><a href="contact.html">CONTACT</a>
+      </nav>
+      <a class="availability" href="contact.html"><i></i> AVAILABLE FOR WORK</a>
+      <button
+        class="menu-toggle"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
     </header>
     <main id="top">
-        <section class="hero">
-            <div class="hero-grid"></div>
-            <div class="hero-copy">
-                <p class="eyebrow reveal"><span class="eyebrow-line"></span> ENGINEER / CREATOR — 2026</p>
-                <h1 class="reveal">アイデアを、<br><span class="gradient-text">動くかたち</span>に。</h1>
-                <p class="hero-lead reveal">学びながら、手を動かして、つくる。<br>小さな一歩を積み重ねるエンジニアのポートフォリオ。</p>
-                <div class="hero-actions reveal"><a class="button button-light" href="#works">制作物を見る
-                        <span>↘</span></a><a class="text-link" href="#about">もっと知る <span>↓</span></a></div>
-                <div class="hero-meta reveal"><span>BASED IN JAPAN</span><span class="meta-rule"></span><span>SCROLL TO
-                        EXPLORE <b>↓</b></span></div>
-            </div>
-            <div class="hero-art" aria-label="メタリックな立体オブジェのイラスト">
-                <div class="orbit orbit-one"></div>
-                <div class="orbit orbit-two"></div>
-                <div class="chrome-sphere">
-                    <div class="sphere-shine"></div>
-                    <div class="sphere-shadow"></div>
-                    <div class="sphere-glint"></div>
+      <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-copy">
+          <h1 class="reveal">
+            アイデアを、<br /><span class="gradient-text">動くかたち</span>に。
+          </h1>
+          <p class="hero-lead reveal">
+            学びながら、手を動かして、つくる。<br />小さな一歩を積み重ねるエンジニアのポートフォリオ。
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-light" href="works.html"
+              >制作物を見る <span>↘</span></a
+            ><a class="text-link" href="#top">もっと知る <span>↓</span></a>
+          </div>
+          <div class="hero-meta reveal">
+            <span>BASED IN JAPAN</span><span class="meta-rule"></span
+            ><span>SCROLL TO EXPLORE <b>↓</b></span>
+          </div>
+        </div>
+        <div class="hero-index">01 <span>/</span> 04</div>
+      </section>
+      <section class="intro section-pad" id="top">
+        <div class="section-kicker">
+          <span>01 — ABOUT</span><span class="kicker-line"></span
+          ><span>はじめまして</span>
+        </div>
+        <div class="hero-art intro-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="chrome-sphere">
+            <div class="sphere-shine"></div>
+            <div class="sphere-shadow"></div>
+            <div class="sphere-glint"></div>
+          </div>
+          <div class="art-label label-top">
+            FIG. 01 <span>— FORM IN MOTION</span>
+          </div>
+          <div class="art-label label-bottom">
+            CREATIVE<br />DEVELOPER <span>↗</span>
+          </div>
+          <div class="art-cross">+</div>
+        </div>
+        <div class="intro-layout">
+          <h2 class="reveal">
+            つくることから、<br />学びを<span class="accent-word"
+              >広げる。</span
+            >
+          </h2>
+          <div class="intro-text reveal">
+            <p>
+              はじめまして、<strong>SATO OTSUKA</strong
+              >です。<br />未経験からSEとして社内システム開発やイベント用Webサイト制作に携わっています。TUMO
+              GunmaのラーニングコーチとしてBlenderなどの技術指導や受講生のモチベーション管理を担当し、技術的な概念をわかりやすく伝える力を磨いてきました。バックエンドからiOSアプリ、AWSまで一気通貫で担えるエンジニアを目指しています。
+            </p>
+            <a class="arrow-link" href="#contact">プロフィール</a>
+          </div>
+        </div>
+        <div class="stats reveal">
+          <div><strong>SE</strong><small>SYSTEM ENGINEER</small></div>
+          <div><strong>COACH</strong><small>LEARNING COACH</small></div>
+          <div><strong>∞</strong><small>THINGS TO LEARN</small></div>
+          <p>SEとしての開発経験と<br />TUMO Gunmaでの指導経験</p>
+        </div>
+      </section>
+      <section class="works section-pad" id="works">
+        <div class="section-kicker">
+          <span>02 — SELECTED WORKS</span><span class="kicker-line"></span
+          ><span>制作物</span>
+        </div>
+        <div class="section-heading">
+          <h2 class="reveal">
+            つくったもの<span class="accent-word">。</span>
+          </h2>
+          <p class="reveal">試して、つくって、少しずつ形にしたもの。</p>
+        </div>
+        <div class="work-showcase" aria-label="制作物カルーセル">
+          <div class="work-carousel">
+            <div class="work-carousel-stage">
+              <article class="work-card orbit-card">
+                <a
+                  class="work-visual visual-blue"
+                  href="work-01.html"
+                  aria-label="作品1の詳細"
+                >
+                  <div class="visual-orbit"></div>
+                  <div class="visual-shape shape-a"></div>
+                  <div class="visual-shape shape-b"></div>
+                  <span class="visual-caption">EVENT WEBSITE</span
+                  ><span class="visual-number">01</span
+                  ><span class="open-icon">↗</span>
+                </a>
+                <div class="work-info">
+                  <div>
+                    <h3><a href="work-01.html">イベント用Webサイト制作</a></h3>
+                    <p>
+                      HTML・CSS・JavaScriptを用いてイベント用Webサイトを制作。動きのあるページを実装しました。
+                    </p>
+                  </div>
+                  <div class="tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  </div>
                 </div>
-                <div class="art-label label-top">FIG. 01 <span>— FORM IN MOTION</span></div>
-                <div class="art-label label-bottom">CREATIVE<br>DEVELOPER <span>↗</span></div>
-                <div class="art-cross">+</div>
-            </div>
-            <div class="hero-index">01 <span>/</span> 04</div>
-        </section>
-        <section class="intro section-pad" id="about">
-            <div class="section-kicker"><span>01 — ABOUT</span><span class="kicker-line"></span><span>はじめまして</span>
-            </div>
-            <div class="intro-layout">
-                <h2 class="reveal">つくることから、<br>学びを<span class="accent-word">広げる。</span></h2>
-                <div class="intro-text reveal">
-                    <p>はじめまして、<strong>SATO OTSUKA</strong>です。<br>ここに自己紹介を書きます。エンジニアを目指したきっかけや、今取り組んでいること、これから挑戦したいことなどを自由に記入してください。</p>
-                        class="arrow-link" href="#contact">プロフィールを見る <span>↗</span></a>
-                </div>
-            </div>
-            <div class="stats reveal">
-                <div><strong>01<span>+</span></strong><small>YEARS LEARNING</small></div>
-                <div><strong>00<span>+</span></strong><small>PROJECTS BUILT</small></div>
-                <div><strong>∞</strong><small>THINGS TO LEARN</small></div>
-                <p>数字はあなたの経験に合わせて<br>自由に変更してください。</p>
-            </div>
-        </section>
-        <section class="works section-pad" id="works">
-            <div class="section-kicker"><span>02 — SELECTED WORKS</span><span
-                    class="kicker-line"></span><span>制作物</span></div>
-            <div class="section-heading">
-                <h2 class="reveal">つくったもの<span class="accent-word">。</span></h2>
-                <p class="reveal">試して、つくって、少しずつ形にしたもの。</p>
-            </div>
-            <div class="orbit-carousel" aria-label="制作物カルーセル">
-                <div class="orbit-stage" aria-label="作品カードが円軌道を周回します">
-                    <article class="work-card orbit-card"><a class="work-visual visual-blue" href="#contact"
-                            aria-label="作品1の詳細">
-                            <div class="visual-orbit"></div>
-                            <div class="visual-shape shape-a"></div>
-                            <div class="visual-shape shape-b"></div><span
-                                class="visual-caption">画像をここに追加<br><small>image/project-01.jpg</small></span><span
-                                class="visual-number">01</span><span class="open-icon">↗</span>
-                        </a>
-                        <div class="work-info">
-                            <div>
-                                <h3>プロジェクト名を記入</h3>
-                                <p>制作物の概要や工夫した点をここに記入します。</p>
-                            </div>
-                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                        </div>
-                    </article>
-                    <article class="work-card orbit-card"><a class="work-visual visual-pink" href="#contact"
-                            aria-label="作品2の詳細">
-                            <div class="visual-window">
-                                <div class="window-bar"><i></i><i></i><i></i></div>
-                                <div class="window-content"><span>YOUR<br>IDEA<span class="window-star">✳</span></span>
-                                </div>
-                            </div><span
-                                class="visual-caption">画像をここに追加<br><small>image/project-02.jpg</small></span><span
-                                class="visual-number">02</span><span class="open-icon">↗</span>
-                        </a>
-                        <div class="work-info">
-                            <div>
-                                <h3>プロジェクト名を記入</h3>
-                                <p>制作物の概要をここに記入します。</p>
-                            </div>
-                            <div class="tags"><span>React</span><span>API</span></div>
-                        </div>
-                    </article>
-                    <article class="work-card orbit-card"><a class="work-visual visual-green" href="#contact"
-                            aria-label="作品3の詳細">
-                            <div class="visual-rings"><i></i><i></i><i></i></div><span
-                                class="visual-caption">画像をここに追加<br><small>image/project-03.jpg</small></span><span
-                                class="visual-number">03</span><span class="open-icon">↗</span>
-                        </a>
-                        <div class="work-info">
-                            <div>
-                                <h3>プロジェクト名を記入</h3>
-                                <p>制作物の概要をここに記入します。</p>
-                            </div>
-                            <div class="tags"><span>Python</span><span>UI</span></div>
-                        </div>
-                    </article>
-                </div>
-                <div class="orbit-controls"><button class="orbit-button orbit-prev" type="button"
-                        aria-label="前の制作物">←</button><span class="orbit-status" aria-live="polite">01 <i>/</i> 03 <b>—
-                            AUTO ROTATE / HOVER TO PAUSE</b></span><button class="orbit-button orbit-pause"
-                        type="button" aria-label="自動回転を一時停止" aria-pressed="false">Ⅱ</button><button
-                        class="orbit-button orbit-next" type="button" aria-label="次の制作物">→</button></div>
-            </div><a class="all-works" href="#contact">すべての制作物を見る <span>↗</span></a>
-        </section>
-        <section class="skills section-pad" id="skills">
-            <div class="section-kicker"><span>03 — TOOLKIT</span><span class="kicker-line"></span><span>スキル・経歴</span>
-            </div>
-            <div class="skills-layout">
-                <h2 class="reveal">道具を知り、<br><span class="accent-word">使いこなす。</span></h2>
-                <div class="skills-content reveal">
-                    <p class="skills-note">学習中の技術や使用経験のあるツールを記入してください。</p>
-                    <div class="skill-list">
-                        <div class="skill-row"><span class="skill-category">FRONTEND</span><span
-                                class="skill-items">HTML <i>·</i> CSS <i>·</i> JavaScript</span><span
-                                class="skill-level">学習中</span></div>
-                        <div class="skill-row"><span class="skill-category">BACKEND</span><span
-                                class="skill-items">言語・フレームワークを記入</span><span class="skill-level">—</span></div>
-                        <div class="skill-row"><span class="skill-category">TOOLS</span><span class="skill-items">Git
-                                <i>·</i> VS Code <i>·</i> ほか</span><span class="skill-level">—</span></div>
+              </article>
+              <article class="work-card orbit-card">
+                <a
+                  class="work-visual visual-pink"
+                  href="work-02.html"
+                  aria-label="作品2の詳細"
+                >
+                  <div class="visual-window">
+                    <div class="window-bar"><i></i><i></i><i></i></div>
+                    <div class="window-content">
+                      <span
+                        >YOUR<br />IDEA<span class="window-star">✳</span></span
+                      >
                     </div>
-                    <div class="timeline-title">経歴・学習歴</div>
-                    <div class="timeline">
-                        <div><time>2026 — NOW</time>
-                            <p>現在の学習や活動を記入</p>
-                        </div>
-                        <div><time>2025 — 2026</time>
-                            <p>これまでの経歴を記入</p>
-                        </div>
-                    </div>
+                  </div>
+                  <span class="visual-caption">INTERNAL SYSTEM</span
+                  ><span class="visual-number">02</span
+                  ><span class="open-icon">↗</span>
+                </a>
+                <div class="work-info">
+                  <div>
+                    <h3><a href="work-02.html">社内システム開発・運用</a></h3>
+                    <p>
+                      社内システムの開発・運用を担当。社外秘のため、公開可能な範囲で課題解決のプロセスを紹介します。
+                    </p>
+                  </div>
+                  <div class="tags">
+                    <span>Java</span><span>Spring Boot</span>
+                  </div>
                 </div>
+              </article>
+              <article class="work-card orbit-card">
+                <a
+                  class="work-visual visual-green"
+                  href="work-03.html"
+                  aria-label="作品3の詳細"
+                >
+                  <div class="visual-rings"><i></i><i></i><i></i></div>
+                  <span class="visual-caption">DRINKING LOG APP</span
+                  ><span class="visual-number">03</span
+                  ><span class="open-icon">↗</span>
+                </a>
+                <div class="work-info">
+                  <div>
+                    <h3>
+                      <a href="work-03.html">お酒の記録・健康管理アプリ</a>
+                    </h3>
+                    <p>
+                      飲酒ログ・身体データの記録とAIリアクションを備えたiOSアプリを開発中（2026年公開目標）。
+                    </p>
+                  </div>
+                  <div class="tags">
+                    <span>SwiftUI</span><span>Spring Boot</span><span>AWS</span>
+                  </div>
+                </div>
+              </article>
             </div>
-        </section>
-        <section class="contact section-pad" id="contact">
-            <div class="contact-glow"></div>
-            <div class="section-kicker"><span>04 — CONTACT</span><span class="kicker-line"></span><span>お問い合わせ</span>
+            <div class="carousel-controls">
+              <button
+                class="carousel-prev"
+                type="button"
+                aria-label="前の制作物"
+              >
+                ←</button
+              ><span class="carousel-count" aria-live="polite"
+                >01 <i>/</i> 03</span
+              ><button
+                class="carousel-next"
+                type="button"
+                aria-label="次の制作物"
+              >
+                →
+              </button>
             </div>
-            <div class="contact-inner">
-                <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
-                <h2>一緒につくりませんか<span class="accent-word">？</span></h2>
-                <p>お仕事のご相談や、ちょっとしたお話もお気軽に。</p><a class="button button-light" href="mailto:hello@example.com">メールで連絡する
-                    <span>↗</span></a><small>hello@example.com — メールアドレスを変更してください</small>
+          </div>
+          <aside class="work-detail-panel" aria-live="polite">
+            <p class="eyebrow">
+              SELECTED PROJECT <span class="detail-number">01</span>
+            </p>
+            <h3 class="detail-title">イベント用Webサイト制作</h3>
+            <p class="detail-description">
+              HTML・CSS・JavaScriptを用いてイベント用Webサイトを制作。動きのあるページを実装しました。
+            </p>
+            <div class="detail-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-            <div class="contact-spark">✳</div>
-        </section>
+            <a class="detail-link" href="work-01.html"
+              >プロジェクト詳細 <span>↗</span></a
+            >
+          </aside>
+        </div>
+        <a class="all-works" href="works.html"
+          >すべての制作物を見る <span>↗</span></a
+        >
+      </section>
+      <section class="skills section-pad" id="skills">
+        <div class="section-kicker">
+          <span>03 — SKILLS</span><span class="kicker-line"></span
+          ><span>スキル・経歴</span>
+        </div>
+        <div class="skills-layout">
+          <h2 class="reveal">
+            道具を知り、<br /><span class="accent-word">使いこなす。</span>
+          </h2>
+          <div class="skills-content reveal">
+            <p class="skills-note">
+              実務経験のある技術と、現在学習中の領域をまとめています。
+            </p>
+            <div class="skill-list">
+              <article class="skill-card skill-card-primary">
+                <div class="skill-card-head">
+                  <span class="skill-category">01 / BACKEND & AUTOMATION</span
+                  ><span class="skill-level">実務経験</span>
+                </div>
+                <h3>業務を支える開発</h3>
+                <div class="skill-tags">
+                  <span>Java</span><span>Spring Boot</span><span>PHP</span
+                  ><span>WordPress</span><span>VBA</span>
+                </div>
+              </article>
+              <article class="skill-card skill-card-secondary">
+                <div class="skill-card-head">
+                  <span class="skill-category">02 / FRONTEND & CREATIVE</span
+                  ><span class="skill-level">制作・指導経験</span>
+                </div>
+                <h3>見た目と体験をつくる</h3>
+                <div class="skill-tags">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                  ><span>Blender</span>
+                </div>
+              </article>
+              <article class="skill-card skill-card-tertiary">
+                <div class="skill-card-head">
+                  <span class="skill-category">03 / TOOLS & LEARNING</span
+                  ><span class="skill-level">実務・学習中</span>
+                </div>
+                <h3>学びを広げる技術</h3>
+                <div class="skill-tags">
+                  <span>Git / GitHub</span><span>Swift / SwiftUI</span
+                  ><span>AWS</span><span>セキュリティ</span
+                  ><span>基本情報技術者</span><span>英語（ビジネス）</span
+                  ><span>フランス語（日常）</span>
+                </div>
+              </article>
+            </div>
+            <div class="timeline-title">取り組み</div>
+            <div class="timeline">
+              <div>
+                <time> — SE / 開発</time>
+                <p>
+                  SEとして社内システム開発・運用に従事。SwiftUI、Java (Spring
+                  Boot)、AWSを学びながら個人アプリを開発中です。
+                </p>
+              </div>
+              <div>
+                <time> — 指導</time>
+                <p>
+                  TUMO Gunma
+                  ラーニングコーチとして、Blenderなどの技術指導と受講生の成長・モチベーションをサポート。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact section-pad" id="contact">
+        <div class="contact-glow"></div>
+        <div class="section-kicker">
+          <span>04 — CONTACT</span><span class="kicker-line"></span
+          ><span>お問い合わせ</span>
+        </div>
+        <div class="contact-inner">
+          <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+          <h2>一緒につくりませんか<span class="accent-word">？</span></h2>
+          <p>お仕事のご相談や、ちょっとしたお話もお気軽に。</p>
+          <a class="button button-light" href="contact.html"
+            >お問い合わせページへ <span>↗</span></a
+          ><small>ご連絡はお問い合わせページから</small>
+        </div>
+        <div class="contact-spark">✳</div>
+      </section>
     </main>
-    <footer><a class="brand" href="#top"><span class="brand-icon">Y</span><span>SATO OTSUKA<span
-                    class="brand-dot">.</span></span></a>
-        <p>© <span id="year">2026</span> SATO OTSUKA. BUILT WITH CURIOSITY.</p><a class="back-top" href="#top">BACK TO TOP
-            ↑</a>
+    <footer>
+      <a class="brand" href="#top"
+        ><span class="brand-icon" aria-hidden="true">SO</span
+        ><span>SATO OTSUKA<span class="brand-dot">.</span></span></a
+      >
+      <p>© <span id="year">2026</span> SATO OTSUKA. BUILT WITH CURIOSITY.</p>
+      <a class="back-top" href="#top">BACK TO TOP ↑</a>
     </footer>
-</body>
-
+  </body>
 </html>
