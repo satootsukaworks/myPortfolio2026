@@ -1,126 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#111212" />
-    <meta name="description" content="Selected work by Sato Otsuka across web, systems, and creative technology." />
-    <title>WORKS — SATO OTSUKA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg"></head>
-  <body class="subpage" id="top">
-    <header class="topbar">
-      <a class="brand" href="index.html"
-        ><span class="brand-icon" aria-hidden="true">SO</span
-        ><span>SATO OTSUKA<span class="brand-dot">.</span></span></a
-      >
-      <nav aria-label="Main navigation">
-        <a href="index.html#top">TOP</a
-        ><a href="works.html" aria-current="page">WORKS</a
-        ><a href="contact.html">CONTACT</a>
-      </nav>
-      <a class="availability" href="contact.html"><i></i> ENGINEER / COACH / CURIOUS MIND</a
-      ><button
-        class="menu-toggle"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        <span></span><span></span>
-      </button>
-      <button class="language-toggle" type="button" aria-label="Switch language">日本語</button>
-    </header>
-    <main>
-      <section class="sub-hero section-pad">
-        <div class="section-kicker">
-          <span>SELECTED WORKS / THE COLLECTION</span><span class="kicker-line"></span
-          ><span>03 RECORDS</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111212" />
+  <meta name="description" content="Selected work by Sato Otsuka across web, systems, and creative technology." />
+  <title>WORKS — SATO OTSUKA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=portfolio-v19" />
+  <script src="script.js?v=portfolio-v19" defer></script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+  <body class="subpage works-page" id="top">
+  <div class="loader" aria-hidden="true">
+    <div class="loader-mark">SO<span>.</span></div>
+    <div class="loader-line"><i></i></div>
+    <p>MY PORTFOLIO</p>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">SO</span><span>SATO OTSUKA<span
+          class="brand-dot">.</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#top">TOP</a><a href="works.html" aria-current="page">WORKS</a><a
+        href="contact.html">CONTACT</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <button class="language-toggle" type="button" aria-label="Switch language">日本語</button>
+  </header>
+  <main>
+    <section class="sub-hero section-pad">
+      <div class="section-kicker">
+        <span>SELECTED WORKS / THE COLLECTION</span><span class="kicker-line"></span><span>03 RECORDS</span>
+      </div>
+      <p class="eyebrow">BETWEEN CODE & RECORDS</p>
+      <h1>A collection of things<br />I've built.</h1>
+      <p class="sub-lead">
+        Practical code. Thoughtful outcomes.<br />A selection of work across web, systems, and creative technology.
+      </p>
+    </section>
+    <section class="collection-art" aria-label="Selected works record carousel">
+      <div class="collection-categories" aria-hidden="true"><span>03 RECORDS</span><span>WEB APPLICATIONS</span><span>WEBSITES</span><span>IOS APPS</span></div>
+      <div class="collection-stage" role="group" aria-label="Choose a project">
+        <button class="collection-item collection-item-web" type="button" data-project="0" aria-label="Select website production">
+          <span class="collection-disc" aria-hidden="true"></span>
+          <span class="collection-card"><small>01 / WEB</small><strong>Website<br />production</strong><span class="page-lines"><i></i><i></i><i></i></span><span class="sleeve-tech">HTML / CSS / JS</span></span>
+        </button>
+        <button class="collection-item collection-item-system" type="button" data-project="1" aria-label="Select internal systems development">
+          <span class="collection-disc" aria-hidden="true"></span>
+          <span class="collection-card"><small>02 / WEB APP</small><strong>Less friction.<br />More flow.</strong><span class="system-ui"><i></i><i></i><i></i><i></i></span><span class="sleeve-tech">JAVA / SPRING BOOT</span></span>
+        </button>
+        <button class="collection-item collection-item-app" type="button" data-project="2" aria-label="Select drinking log and wellness app">
+          <span class="collection-disc" aria-hidden="true"></span>
+          <span class="collection-card"><small>03 / IOS APP</small><strong>Drink well.<br />Feel better.</strong><span class="app-ui"><i></i><i></i><i></i></span><span class="sleeve-tech">SWIFTUI / AWS</span>
+          </span>
+        </button>
+      </div>
+      <div class="collection-status"><span class="collection-selected">NOW SELECTED / STW—001</span><div class="collection-controls"><button class="collection-prev" type="button" aria-label="Previous record">←</button><span class="collection-count" aria-live="polite">01 / 03</span><button class="collection-next" type="button" aria-label="Next record">→</button></div></div>
+    </section>
+    <section class="track-detail section-pad" id="work-detail">
+      <div class="track-detail-copy" aria-live="polite">
+        <p class="eyebrow detail-eyebrow">01 / WEB PROJECT</p>
+        <h2 class="track-title">A website with a little more movement.</h2>
+        <p class="track-description">I built a website with HTML, CSS, and JavaScript, bringing motion and interaction into the page while keeping the information clear.</p>
+      </div>
+      <dl class="track-detail-facts">
+        <div>
+          <dt>THE BUILD</dt>
+          <dd class="track-build">HTML, CSS, and JavaScript</dd>
         </div>
-        <p class="eyebrow">BETWEEN CODE & RECORDS</p>
-        <h1>A collection of things<br />I've built.</h1>
-        <p class="sub-lead">
-          Practical code. Thoughtful outcomes.<br />A selection of work across web, systems, and creative technology.
-        </p>
-      </section>
-      <section class="works-list section-pad" aria-label="Selected works">
-        <a class="works-list-card" href="#tracklist"
-          ><div class="work-visual visual-blue">
-            <div class="visual-orbit"></div>
-            <div class="visual-shape shape-a"></div>
-            <div class="visual-shape shape-b"></div>
-            <span class="visual-number">01</span
-            ><span class="open-icon">↗</span>
-          </div>
-          <div class="work-info">
-            <div>
-              <h2>Event website</h2>
-              <p>An event website built with HTML, CSS, and JavaScript, with interactive page details.</p>
-            </div>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-          </div></a
-        >
-        <a class="works-list-card" href="#tracklist"
-          ><div class="work-visual visual-pink">
-            <div class="visual-window">
-              <div class="window-bar"><i></i><i></i><i></i></div>
-              <div class="window-content">
-                <span>YOUR<br />IDEA<span class="window-star">✳</span></span>
-              </div>
-            </div>
-            <span class="visual-number">02</span
-            ><span class="open-icon">↗</span>
-          </div>
-          <div class="work-info">
-            <div>
-              <h2>Internal systems development</h2>
-              <p>
-                Developing and maintaining internal systems. Project specifics remain confidential.
-              </p>
-            </div>
-            <div class="tags"><span>Java</span><span>Spring Boot</span></div>
-          </div></a
-        >
-        <a class="works-list-card" href="#tracklist"
-          ><div class="work-visual visual-green">
-            <div class="visual-rings"><i></i><i></i><i></i></div>
-            <span class="visual-number">03</span
-            ><span class="open-icon">↗</span>
-          </div>
-          <div class="work-info">
-            <div>
-              <h2>Drinking log & wellness app</h2>
-              <p>
-                An iOS app in development for tracking drinks and health data, with AI-powered feedback.
-              </p>
-            </div>
-            <div class="tags">
-              <span>SwiftUI</span><span>Spring Boot</span><span>AWS</span>
-            </div>
-          </div></a
-        >
-      </section>
-      <section class="tracklist section-pad" id="tracklist">
-        <div class="section-kicker"><span>THE FULL TRACKLIST</span><span class="kicker-line"></span><span>03 RECORDS</span></div>
-        <article><b>01</b><span class="track-swatch"></span><div><h2>Event website</h2><p>Interactive event pages · HTML / CSS / JavaScript</p></div><small>WEB / FRONTEND</small></article>
-        <article><b>02</b><span class="track-swatch"></span><div><h2>Internal systems development</h2><p>Internal system development and operations · project details confidential</p></div><small>JAVA / SPRING BOOT</small></article>
-        <article><b>03</b><span class="track-swatch"></span><div><h2>Drinking log & wellness app</h2><p>In development · SwiftUI / Spring Boot / AWS</p></div><small>IOS / PERSONAL PROJECT</small></article>
-      </section>
-    </main>
-    <footer>
-      <a class="brand" href="index.html"
-        ><span class="brand-icon" aria-hidden="true">SO</span
-        ><span>SATO OTSUKA<span class="brand-dot">.</span></span></a
-      >
-      <p>© <span id="year">2026</span> SATO OTSUKA. BUILT WITH CURIOSITY.</p>
-      <div class="language-control"><button class="language-toggle" type="button">日本語</button><a class="back-top" href="#top">BACK TO TOP ↑</a></div>
-    </footer>
-  </body>
+        <div>
+          <dt>THE FOCUS</dt>
+          <dd class="track-focus">Interactive page details and clear website content</dd>
+        </div>
+        <div>
+          <dt>THE APPROACH</dt>
+          <dd class="track-approach">Practical code shaped around the needs of the website</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+  <footer>
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">SO</span><span>SATO OTSUKA<span
+          class="brand-dot">.</span></span></a>
+    <p>© <span id="year">2026</span> SATO OTSUKA. BUILT WITH CURIOSITY.</p>
+    <div class="language-control"><button class="language-toggle" type="button">日本語</button><a class="back-top"
+        href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+</body>
+
 </html>

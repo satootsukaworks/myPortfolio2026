@@ -9,30 +9,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=portfolio-v18" />
+    <script src="script.js?v=portfolio-v18" defer></script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   </head>
   <body class="subpage" id="top">
+    <div class="loader" aria-hidden="true">
+      <div class="loader-mark">SO<span>.</span></div>
+      <div class="loader-line"><i></i></div>
+      <p>MY PORTFOLIO</p>
+    </div>
     <header class="topbar">
       <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">SO</span><span>SATO OTSUKA<span class="brand-dot">.</span></span></a>
       <nav aria-label="Main navigation"><a href="index.html#top">TOP</a><a href="works.html">WORKS</a><a href="contact.html" aria-current="page">CONTACT</a></nav>
-      <a class="availability" href="#contact"><i></i> ENGINEER / COACH / CURIOUS MIND</a>
       <button class="language-toggle" type="button" aria-label="Switch language">日本語</button>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </header>
     <main>
       <section class="contact-page section-pad" id="contact">
         <div class="section-kicker"><span>CONTACT / BONJOUR, CURIOUS MINDS.</span><span class="kicker-line"></span><span>LET'S TALK</span></div>
-        <p class="eyebrow">YOUR NEXT TRACK / START HERE</p>
         <h1>Good things start<br />with a conversation.</h1>
         <p class="sub-lead">A website, an internal tool, a repetitive task, or a technical idea you'd like to make clearer. Tell me what you're thinking.</p>
+        <div class="contact-art" aria-hidden="true">
+          <svg viewBox="0 0 360 300" role="presentation">
+            <defs><radialGradient id="contact-disc" cx="38%" cy="32%"><stop stop-color="#343d51"/><stop offset=".48" stop-color="#121a2b"/><stop offset="1" stop-color="#050913"/></radialGradient><linearGradient id="cup" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0d1"/><stop offset="1" stop-color="#d4b995"/></linearGradient></defs>
+            <circle cx="228" cy="130" r="112" fill="url(#contact-disc)" stroke="#39445d"/>
+            <g fill="none" stroke="#65718b" opacity=".42"><circle cx="228" cy="130" r="101"/><circle cx="228" cy="130" r="91"/><circle cx="228" cy="130" r="81"/><circle cx="228" cy="130" r="71"/></g>
+            <circle cx="228" cy="130" r="31" fill="#c8b9f0"/><text x="211" y="134" fill="#151d32" font-family="monospace" font-size="9">SIDE A</text>
+            <ellipse cx="134" cy="221" rx="79" ry="25" fill="#c8b9f0"/>
+            <ellipse cx="134" cy="212" rx="61" ry="18" fill="#e7dafa"/>
+            <path d="M93 157h83l-8 42c-3 17-16 26-34 26s-31-9-34-26z" fill="url(#cup)"/>
+            <path d="M176 166h15c20 0 20 31 0 31h-19" fill="none" stroke="#d8c09e" stroke-width="10"/>
+            <ellipse cx="134" cy="158" rx="42" ry="12" fill="#cab18d"/>
+            <ellipse cx="134" cy="158" rx="33" ry="8" fill="#44311f"/>
+            <ellipse cx="125" cy="156" rx="13" ry="4" fill="#b8a06c" opacity=".8"/>
+            <text x="173" y="282" fill="#9aa6bd" font-family="monospace" font-size="9" letter-spacing="1.5">ON REPEAT / OFF THE CLOCK</text>
+          </svg>
+        </div>
         <div class="contact-services">
           <article><small>01 / CONSULTATION</small><h2>Websites & content</h2><p>Website creation with PHP and WordPress. Clear content, sensible structure, and maintainable pages.</p></article>
           <article><small>02 / CONSULTATION</small><h2>Internal tools & automation</h2><p>Spring Boot web applications and VBA workflows to support everyday business operations.</p></article>
           <article><small>03 / CONSULTATION</small><h2>Technical guidance</h2><p>Patient explanations, practical learning support, and help making technical concepts approachable.</p></article>
         </div>
-        <a class="button button-light" href="mailto:sato.otsuka.works@gmail.com?subject=Hello%20Sato">Email me at sato.otsuka.works@gmail.com <span>↗</span></a>
+      </section>
+      <section class="contact-note-section section-pad">
+        <div class="contact-note-copy">
+          <h2>Tell me a little<br />about your idea.</h2>
+          <p>You don't need a perfect brief. A little context is a good place to begin.</p>
+          <small>THE IDEA</small><p>What would you like to create or improve?</p>
+          <small>THE CONTEXT</small><p>Who is it for, and what's getting in the way?</p>
+          <small>THE PRACTICALS</small><p>Any preferred timing, scope, or budget range?</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-heading"><h2>Leave a note</h2><small>* REQUIRED FIELDS</small></div>
+          <div class="form-fields">
+            <label>Name *<input name="name" autocomplete="name" placeholder="Your name" required /></label>
+            <label>Email *<input name="email" type="email" autocomplete="email" placeholder="Your email address" required /></label>
+          </div>
+          <label>Message *<textarea name="message" rows="5" placeholder="I'm thinking about…" required></textarea></label>
+          <p class="form-privacy">Please don't include passwords, private business data, or other sensitive information.</p>
+          <button class="form-submit" type="submit">Compose email <span>↗</span></button>
+          <small class="form-note">Your mail app will open with your message addressed to Sato Otsuka.</small>
+        </form>
       </section>
     </main>
     <footer>
@@ -40,5 +78,14 @@
       <p>© <span id="year">2026</span> SATO OTSUKA. BETWEEN CODE & RECORDS.</p>
       <div class="language-control"><button class="language-toggle" type="button">日本語</button><a class="back-top" href="#top">BACK TO TOP ↑</a></div>
     </footer>
+    <script>
+      document.querySelector("#contact-form")?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = new FormData(event.currentTarget);
+        const subject = `Portfolio inquiry from ${form.get("name")}`;
+        const body = `Name: ${form.get("name")}\nEmail: ${form.get("email")}\n\n${form.get("message")}`;
+        window.location.href = `mailto:sato.otsuka.works@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    </script>
   </body>
 </html>

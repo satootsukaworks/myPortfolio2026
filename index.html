@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#111212" />
+    <meta name="theme-color" content="#101a31" />
     <meta
       name="description"
       content="Systems engineer and learning coach exploring the intersection of technology and creativity."
@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=portfolio-v18" />
+    <script src="script.js?v=portfolio-v18" defer></script>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   </head>
 
@@ -24,7 +24,7 @@
     <div class="loader" aria-hidden="true">
       <div class="loader-mark">SO<span>.</span></div>
       <div class="loader-line"><i></i></div>
-      <p>BUILDING MY PORTFOLIO</p>
+      <p>MY PORTFOLIO</p>
     </div>
     <header class="topbar">
       <a class="brand" href="#top" aria-label="Back to top"
@@ -35,7 +35,6 @@
         <a href="#top">TOP</a><a href="works.html">WORKS</a
         ><a href="contact.html">CONTACT</a>
       </nav>
-      <a class="availability" href="#contact"><i></i> ENGINEER / COACH / CURIOUS MIND</a>
       <button class="language-toggle" type="button" aria-label="Switch language">日本語</button>
       <button
         class="menu-toggle"
@@ -57,7 +56,7 @@
           </p>
           <div class="hero-actions reveal">
             <a class="button button-light" href="works.html"
-              >View selected works <span>↘</span></a
+              >View works </a
             ><a class="text-link" href="#about">A little about me <span>↓</span></a>
           </div>
           <div class="hero-meta reveal">
@@ -65,57 +64,49 @@
             ><span>SCROLL TO EXPLORE <b>↓</b></span>
           </div>
         </div>
-        <div class="hero-index">01 <span>/</span> 04</div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="record-still-life" viewBox="0 0 760 540" role="presentation">
+            <defs>
+              <radialGradient id="disc" cx="38%" cy="32%" r="72%"><stop stop-color="#32394a"/><stop offset=".4" stop-color="#111722"/><stop offset=".82" stop-color="#05080f"/><stop offset="1" stop-color="#202735"/></radialGradient>
+              <linearGradient id="sleeve" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8c9f4"/><stop offset="1" stop-color="#ad9dd8"/></linearGradient>
+              <radialGradient id="label"><stop stop-color="#f4ecbf"/><stop offset="1" stop-color="#d5c88e"/></radialGradient>
+              <filter id="soft-shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+            </defs>
+            <rect width="760" height="540" fill="#111b31"/>
+            <ellipse cx="391" cy="445" rx="330" ry="42" fill="#020712" opacity=".75" filter="url(#soft-shadow)"/>
+            <path d="M430 266c126-81 160-3 250 11 49 8 70-2 80-12v182c-71 37-119 6-177-11-61-17-108-7-153 22z" fill="#d9f18f" opacity=".95"/>
+            <circle cx="578" cy="187" r="145" fill="#d7ee9c"/>
+            <circle cx="578" cy="187" r="122" fill="none" stroke="#b6ca80" stroke-width="2" opacity=".6"/>
+            <circle cx="578" cy="187" r="96" fill="none" stroke="#b6ca80" stroke-width="2" opacity=".55"/>
+            <circle cx="578" cy="187" r="67" fill="none" stroke="#b6ca80" stroke-width="2" opacity=".5"/>
+            <circle cx="578" cy="187" r="7" fill="#26314a"/>
+            <rect x="178" y="78" width="286" height="286" rx="2" fill="url(#sleeve)"/>
+            <g fill="none" stroke="#a99acb" opacity=".4">
+              <circle cx="321" cy="221" r="107"/><circle cx="321" cy="221" r="94"/><circle cx="321" cy="221" r="80"/><circle cx="321" cy="221" r="66"/><circle cx="321" cy="221" r="52"/>
+            </g>
+            <ellipse cx="332" cy="400" rx="196" ry="80" fill="#020712" opacity=".65"/>
+            <circle cx="328" cy="373" r="121" fill="url(#disc)" stroke="#313a4b" stroke-width="2"/>
+            <g fill="none" stroke="#566072" opacity=".35">
+              <circle cx="328" cy="373" r="109"/><circle cx="328" cy="373" r="100"/><circle cx="328" cy="373" r="90"/><circle cx="328" cy="373" r="80"/><circle cx="328" cy="373" r="70"/>
+            </g>
+            <circle cx="328" cy="373" r="31" fill="url(#label)"/>
+            <circle cx="328" cy="373" r="4" fill="#252a34"/>
+            <circle cx="631" cy="369" r="26" fill="#748dd1"/>
+            <circle cx="624" cy="360" r="7" fill="#a8b7e8" opacity=".8"/>
+            <text x="32" y="496" fill="#9aa6bd" font-family="monospace" font-size="11" letter-spacing="2"> — TECHNICAL MIND, CREATIVE FREQUENCY</text>
+          </svg>
+        </div>
+        <div class="hero-index">01 <span>/</span> 03</div>
       </section>
-      <section class="intro section-pad" id="about">
-        <div class="section-kicker">
-          <span>01 — ABOUT</span><span class="kicker-line"></span
-          ><span>Hello, curious mind</span>
-        </div>
-        <div class="hero-art intro-art" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="chrome-sphere">
-            <div class="sphere-shine"></div>
-            <div class="sphere-shadow"></div>
-            <div class="sphere-glint"></div>
-          </div>
-          <div class="art-label label-top">
-            FIG. 01 <span>— FORM IN MOTION</span>
-          </div>
-          <div class="art-label label-bottom">
-            CREATIVE<br />DEVELOPER <span>↗</span>
-          </div>
-          <div class="art-cross">+</div>
-        </div>
-        <div class="intro-layout">
-          <h2 class="reveal">
-            Built with logic.<br />Shared with <span class="accent-word"
-              >people.</span
-            >
-          </h2>
-          <div class="intro-text reveal">
-            <p>
-              I'm <strong>SATO OTSUKA</strong>, a systems engineer building internal systems and event websites. As a learning coach at TUMO Gunma, I teach Blender and help students stay motivated. I enjoy making technical ideas clear and useful, and I'm working toward building across backend, iOS, and AWS.
-            </p>
-            <a class="arrow-link" href="#contact">Get in touch ↗</a>
-          </div>
-        </div>
-        <div class="stats reveal">
-          <div><strong>SE</strong><small>SYSTEM ENGINEER</small></div>
-          <div><strong>COACH</strong><small>LEARNING COACH</small></div>
-          <div><strong>∞</strong><small>THINGS TO LEARN</small></div>
-          <p>Practical code.<br />Thoughtful outcomes.</p>
-        </div>
-      </section>
+      <div class="ticker-band" aria-label="Focus areas"><span>SYSTEMS ENGINEERING</span><span>WEBSITES &amp; AUTOMATION</span><span>LEARNING &amp; COMMUNICATION</span><span>ENGLISH / FRANÇAIS / 日本語</span></div>
       <section class="works section-pad" id="works">
         <div class="section-kicker">
-          <span>02 — SELECTED WORKS</span><span class="kicker-line"></span
-          ><span>Between code & records</span>
+          <span>01 / ON THE TURNTABLE</span><span class="kicker-line"></span
+          >
         </div>
         <div class="section-heading">
-          <h2 class="reveal">A collection of things I've built.</h2>
-          <p class="reveal">Three projects, each shaped by curiosity and practical work.</p>
+          <h2 class="reveal">Practical code. Thoughtful outcomes.</h2>
+          <p class="reveal">Three sample records. One practical, people-first approach.</p>
         </div>
         <div class="work-showcase" aria-label="Selected works carousel">
           <div class="work-carousel">
@@ -124,20 +115,20 @@
                 <a
                   class="work-visual visual-blue"
                   href="#work-detail"
-                  aria-label="Event website details"
+                  aria-label="Website production details"
                 >
                   <div class="visual-orbit"></div>
                   <div class="visual-shape shape-a"></div>
                   <div class="visual-shape shape-b"></div>
-                  <span class="visual-caption">EVENT WEBSITE</span
+                  <span class="visual-caption">WEBSITE PRODUCTION</span
                   ><span class="visual-number">01</span
                   ><span class="open-icon">↗</span>
                 </a>
                 <div class="work-info">
                   <div>
-                    <h3><a href="#work-detail">Event website</a></h3>
+                    <h3><a href="#work-detail">Website production</a></h3>
                     <p>
-                      An event website built with HTML, CSS, and JavaScript, with interactive page details.
+                      A website built with HTML, CSS, and JavaScript, with interactive page details.
                     </p>
                   </div>
                   <div class="tags">
@@ -153,10 +144,9 @@
                 >
                   <div class="visual-window">
                     <div class="window-bar"><i></i><i></i><i></i></div>
-                    <div class="window-content">
-                      <span
-                        >YOUR<br />IDEA<span class="window-star">✳</span></span
-                      >
+                    <div class="window-content" aria-hidden="true">
+                      <div class="screen-sidebar"><i></i><i></i><i></i><i></i></div>
+                      <div class="screen-workspace"><b>Internal systems</b><div class="screen-table"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
                     </div>
                   </div>
                   <span class="visual-caption">INTERNAL SYSTEM</span
@@ -223,9 +213,9 @@
             <p class="eyebrow">
               SELECTED PROJECT <span class="detail-number">01</span>
             </p>
-            <h3 class="detail-title">Event website</h3>
+            <h3 class="detail-title">Website production</h3>
             <p class="detail-description">
-              An event website built with HTML, CSS, and JavaScript, with interactive page details.
+              A website built with HTML, CSS, and JavaScript, with interactive page details.
             </p>
             <div class="detail-tags">
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
@@ -239,89 +229,85 @@
           >Explore all works <span>↗</span></a
         >
       </section>
-      <section class="skills section-pad" id="skills">
+      <section class="intro section-pad" id="about">
         <div class="section-kicker">
-          <span>03 — SKILLS</span><span class="kicker-line"></span
-          ><span>Skills & experience</span>
+          <span>02 / THE LINER NOTES</span><span class="kicker-line"></span>
         </div>
-        <div class="skills-layout">
-          <h2 class="reveal">
-            The current set.<br /><span class="accent-word">Always in rotation.</span>
-          </h2>
-          <div class="skills-content reveal">
-            <p class="skills-note">
-              Skills and experience across engineering, creative practice, and teaching.
-            </p>
-            <div class="skill-list">
-              <article class="skill-card skill-card-primary">
-                <div class="skill-card-head">
-                  <span class="skill-category">01 / BACKEND & AUTOMATION</span
-                  ><span class="skill-level">Professional experience</span>
-                </div>
-                <h3>Backend & automation</h3>
-                <div class="skill-tags">
-                  <span>Java</span><span>Spring Boot</span><span>PHP</span
-                  ><span>WordPress</span><span>VBA</span>
-                </div>
-              </article>
-              <article class="skill-card skill-card-secondary">
-                <div class="skill-card-head">
-                  <span class="skill-category">02 / FRONTEND & CREATIVE</span
-                  ><span class="skill-level">Creative practice & teaching</span>
-                </div>
-                <h3>Web & creative development</h3>
-                <div class="skill-tags">
-                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
-                  ><span>Blender</span>
-                </div>
-              </article>
-              <article class="skill-card skill-card-tertiary">
-                <div class="skill-card-head">
-                  <span class="skill-category">03 / TOOLS & LEARNING</span
-                  ><span class="skill-level">In practice & in progress</span>
-                </div>
-                <h3>Tools & learning</h3>
-                <div class="skill-tags">
-                  <span>Git / GitHub</span><span>Swift / SwiftUI</span
-                  ><span>AWS</span><span>Security</span
-                  ><span>Fundamental Information Technology Engineer</span><span>English (business)</span
-                  ><span>French (conversational)</span>
-                </div>
-              </article>
-            </div>
-            <div class="timeline-title">Experience</div>
-            <div class="timeline">
-              <div>
-                <time> — Systems engineer</time>
-                <p>
-                  Developing and maintaining internal systems. Building a personal app while learning SwiftUI, Java (Spring Boot), and AWS.
-                </p>
-              </div>
-              <div>
-                <time> — Learning coach</time>
-                <p>
-                  Teaching creative technology such as Blender and supporting students' growth and motivation at TUMO Gunma.
-                </p>
-              </div>
+        <div class="intro-layout">
+          <div class="intro-copy">
+            <h2 class="reveal">Built with logic.<br />Shared with people.</h2>
+            <div class="intro-text reveal">
+              <p>
+                I’m satootsukaworks. I started as a systems engineer, building internal systems, creating websites and working with Git in a professional setting.
+              </p>
+              <p>
+                Alongside engineering, I’m a Learning Coach at TUMO Gunma. I help students work through technical ideas and find the motivation to keep creating.
+              </p>
             </div>
           </div>
+          <div class="liner-notes reveal">
+            <article><span>01</span><div><h3>Make the complex clear</h3><p>Explaining technical concepts in a way people can actually use.</p></div></article>
+            <article><span>02</span><div><h3>Connect code to everyday work</h3><p>Spring Boot web apps, internal tools and VBA business automation.</p></div></article>
+            <article><span>03</span><div><h3>Support the next step</h3><p>Technical guidance with patience, encouragement and a learning mindset.</p></div></article>
+          </div>
+        </div>
+      </section>
+      <section class="skills section-pad" id="skills">
+        <div class="section-kicker">
+          <span>03 / ALWAYS IN ROTATION</span><span class="kicker-line"></span>
+        </div>
+        <div class="rotation-grid">
+          <article class="rotation-column">
+            <h2>The current set</h2>
+            <p>Java / Spring Boot / Thymeleaf<br />PHP / WordPress / VBA / Git</p>
+            <small>PROFESSIONAL EXPERIENCE</small>
+            <small class="rotation-accent">CREATIVE PRACTICE / 3D MODELING</small>
+          </article>
+          <article class="rotation-column">
+            <h2>The next track</h2>
+            <p>Studying for the Fundamental Information Technology Engineer Examination.</p>
+            <p>Longer-term direction: full-stack freelance work, AWS &amp; security, deeper Java backend skills and native iOS development.</p>
+            <small class="rotation-blue">LEARNING &amp; FUTURE DIRECTION</small>
+          </article>
+          <article class="rotation-column rotation-coffee">
+            <div>
+              <small>OFF THE CLOCK</small>
+              <h2>Good records.<br />Fresh perspectives.</h2>
+              <p>Western music, coffee and the idea of working from somewhere new. English &amp; French along for the journey.</p>
+            </div>
+            <svg class="coffee-illustration" viewBox="0 0 190 150" role="img" aria-label="A cup of coffee on a saucer">
+              <defs>
+                <linearGradient id="coffee-cup" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0bb"/><stop offset=".55" stop-color="#e4c66f"/><stop offset="1" stop-color="#b99a4c"/></linearGradient>
+                <linearGradient id="coffee-saucer" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe9a1"/><stop offset="1" stop-color="#c9a84f"/></linearGradient>
+                <radialGradient id="coffee-liquid"><stop stop-color="#4a2a18"/><stop offset="1" stop-color="#1c120d"/></radialGradient>
+                <filter id="coffee-shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+              </defs>
+              <ellipse cx="99" cy="128" rx="72" ry="10" fill="#050a16" opacity=".5" filter="url(#coffee-shadow)"/>
+              <ellipse cx="96" cy="111" rx="79" ry="23" fill="url(#coffee-saucer)"/>
+              <ellipse cx="96" cy="106" rx="64" ry="15" fill="#f8e5a0"/>
+              <path d="M126 47c35-8 45 36 10 45" fill="none" stroke="#cfad58" stroke-width="13"/>
+              <path d="M127 50c23-5 31 27 9 34" fill="none" stroke="#f0d77f" stroke-width="6"/>
+              <path d="M42 40h91l-8 57c-2 14-70 14-73 0z" fill="url(#coffee-cup)"/>
+              <ellipse cx="87.5" cy="41" rx="45.5" ry="13" fill="#fff0bd"/>
+              <ellipse cx="87.5" cy="42" rx="37" ry="8.5" fill="url(#coffee-liquid)"/>
+              <ellipse cx="76" cy="39" rx="9" ry="3" fill="#9b6840" opacity=".55"/>
+              <path d="M55 54c4 15 4 25 5 35" stroke="#fff9de" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+            </svg>
+          </article>
         </div>
       </section>
       <section class="contact section-pad" id="contact">
         <div class="contact-glow"></div>
         <div class="section-kicker">
-          <span>03 — CONTACT</span><span class="kicker-line"></span
-          ><span>Say hello</span>
+          <span>NEXT TRACK / LET'S TALK</span><span class="kicker-line"></span>
         </div>
         <div class="contact-inner">
-          <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
-          <h2>Good things start<br />with a conversation.</h2>
-          <p>Tell me what you're thinking. A clear next step starts with a note.</p>
+          <h2>Something in mind?</h2>
+          <p>A useful tool, a thoughtful website, or a question worth exploring.</p>
           <a class="button button-light" href="contact.html"
             >Start a conversation <span>↗</span></a
-          ><small>English / Français / 日本語</small>
+          >
         </div>
-        <div class="contact-spark">✳</div>
       </section>
     </main>
     <footer>
