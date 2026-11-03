@@ -1,5 +1,80 @@
 // Portfolio interactions: intro reveal, scroll-in elements, and mobile navigation.
 (() => {
+  const translations = [
+    ["TOP", "トップ"], ["WORKS", "制作物"], ["CONTACT", "お問い合わせ"],
+    ["SATO OTSUKA", "SATO OTSUKA"], ["A little mystery.", "少しのミステリー。"],
+    ["A lot of curiosity.", "たくさんの好奇心。"], ["View selected works", "制作物を見る"],
+    ["A little about me", "プロフィール"], ["Built with logic.", "ロジックでつくる。"],
+    ["people.", "人と共有する。"], ["Get in touch ↗", "お問い合わせ ↗"],
+    ["Practical code.", "実用的なコード。"], ["Thoughtful outcomes.", "考え抜かれた成果。"],
+    ["Selected works / the collection", "制作物 / コレクション"], ["03 records", "3つの記録"],
+    ["Event website", "イベント用Webサイト制作"],
+    ["An event website built with HTML, CSS, and JavaScript, with interactive page details.", "HTML・CSS・JavaScriptを用いてイベント用Webサイトを制作。動きのあるページを実装しました。"],
+    ["Internal systems development", "社内システム開発・運用"],
+    ["Developing and maintaining internal systems, with project details kept confidential.", "社内システムの開発・運用を担当。社外秘のため、公開可能な範囲で課題解決のプロセスを紹介します。"],
+    ["Drinking log & wellness app", "お酒の記録・健康管理アプリ"],
+    ["An iOS app in development for tracking drinks and health data, with AI-powered feedback.", "飲酒ログ・身体データの記録とAIリアクションを備えたiOSアプリを開発中。"],
+    ["Explore all works", "すべての制作物を見る"], ["Professional experience", "実務経験"],
+    ["Creative practice & teaching", "制作・指導経験"], ["In practice & in progress", "実務・学習中"],
+    ["Backend & automation", "業務を支える開発"], ["Web & creative development", "見た目と体験をつくる"],
+    ["Tools & learning", "学びを広げる技術"], ["Experience", "取り組み"],
+    ["Systems engineer", "SE / 開発"], ["Learning coach", "指導"],
+    ["Good things start", "いいことは始まる"], ["with a conversation.", "会話から。"],
+    ["Start a conversation", "会話を始める"], ["Back to top ↑", "トップへ戻る ↑"],
+    ["Internal tools & automation", "社内ツール・自動化"], ["Technical guidance", "技術サポート"],
+    ["Websites & content", "Webサイト・コンテンツ"],
+    ["Hello, curious mind", "好奇心を持つあなたへ"], ["Between code & records", "コードとレコードのあいだ"],
+    ["Skills & experience", "スキルと経験"], ["Say hello", "こんにちは"],
+    ["Three projects, each shaped by curiosity and practical work.", "好奇心と実践から生まれた3つのプロジェクト。"],
+    ["A collection of things I've built.", "これまでにつくったもの。"],
+    ["I'm SATO OTSUKA, a systems engineer building internal systems and event websites. As a learning coach at TUMO Gunma, I teach Blender and help students stay motivated. I enjoy making technical ideas clear and useful, and I'm working toward building across backend, iOS, and AWS.", "SATO OTSUKAです。社内システムやイベント用Webサイトをつくるシステムエンジニアです。TUMO GunmaではラーニングコーチとしてBlenderを教え、受講生のモチベーションを支えています。技術的なアイデアをわかりやすく役立つ形にすることを大切にし、バックエンド、iOS、AWSまで幅広く開発できるエンジニアを目指しています。"],
+    ["Skills and experience across engineering, creative practice, and teaching.", "エンジニアリング、制作、指導にわたるスキルと経験。"],
+    ["Developing and maintaining internal systems. Building a personal app while learning SwiftUI, Java (Spring Boot), and AWS.", "社内システムの開発・運用に従事。SwiftUI、Java（Spring Boot）、AWSを学びながら個人アプリを開発中です。"],
+    ["Teaching creative technology such as Blender and supporting students' growth and motivation at TUMO Gunma.", "TUMO GunmaでBlenderなどの技術を指導し、受講生の成長とモチベーションを支援しています。"],
+    ["Tell me what you're thinking. A clear next step starts with a note.", "考えていることを聞かせてください。まずはメッセージから次の一歩を始めましょう。"],
+    ["A website, an internal tool, a repetitive task, or a technical idea you'd like to make clearer. Tell me what you're thinking.", "Webサイト、社内ツール、繰り返し作業、技術的なアイデアなど、気軽にご相談ください。"],
+    ["A selection of work across web, systems, and creative technology.", "Web、システム、クリエイティブ技術に関する制作物を紹介します。"],
+    ["Practical code. Thoughtful outcomes.", "実用的なコード。考え抜かれた成果。"],
+    ["An iOS app in development for tracking drinks and health data, with AI-powered feedback.", "飲酒ログと健康データを記録し、AIによるフィードバックを備えた開発中のiOSアプリ。"],
+    ["English (business)", "英語（ビジネス）"], ["French (conversational)", "フランス語（日常会話）"],
+    ["Security", "セキュリティ"], ["Fundamental Information Technology Engineer", "基本情報技術者"],
+    ["A collection of things I've built.", "これまでにつくったもの。"],
+    ["Three projects, each shaped by curiosity and practical work.", "好奇心と実践から生まれた3つのプロジェクト。"],
+    ["Interactive event pages · HTML / CSS / JavaScript", "動きのあるイベントページ · HTML / CSS / JavaScript"],
+    ["Internal system development and operations · project details confidential", "社内システムの開発・運用 · 詳細非公開"],
+    ["In development · SwiftUI / Spring Boot / AWS", "開発中 · SwiftUI / Spring Boot / AWS"],
+    ["A website, an internal tool, a repetitive task, or a technical idea you'd like to make clearer. Tell me what you're thinking.", "Webサイト、社内ツール、繰り返し作業、技術的なアイデアなど、気軽にご相談ください。"],
+    ["Website creation with PHP and WordPress. Clear content, sensible structure, and maintainable pages.", "PHPとWordPressによるWebサイト制作。明快なコンテンツ、わかりやすい構成、保守しやすいページをつくります。"],
+    ["Spring Boot web applications and VBA workflows to support everyday business operations.", "日々の業務を支えるSpring BootのWebアプリケーションとVBAワークフロー。"],
+    ["Patient explanations, practical learning support, and help making technical concepts approachable.", "丁寧な説明と実践的な学習支援で、技術的な概念をわかりやすく伝えます。"],
+    ["Let's talk", "お話ししましょう"], ["Main navigation", "メインナビゲーション"],
+    ["Open menu", "メニューを開く"], ["Close menu", "メニューを閉じる"],
+    ["THE FULL TRACKLIST", "全作品リスト"], ["BACK TO TOP ↑", "トップへ戻る ↑"],
+    ["Email me at sato.otsuka.works@gmail.com", "sato.otsuka.works@gmail.com にメールする"],
+    ["A useful tool, a thoughtful website, or a question worth exploring.", "役立つツール、丁寧なWebサイト、考えてみたい質問など。"],
+    ["Your next track / start here", "次のトラック / ここから始める"],
+  ];
+  const languageButtonLabel = (language) => language === "en" ? "日本語" : "English";
+  const currentLanguage = () => localStorage.getItem("portfolio-language") || "en";
+  const applyLanguage = (language) => {
+    const pairs = language === "ja" ? translations : translations.map(([en, ja]) => [ja, en]);
+    const lookup = new Map(pairs);
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      const key = node.nodeValue.trim();
+      if (lookup.has(key)) node.nodeValue = node.nodeValue.replace(key, lookup.get(key));
+    }
+    document.documentElement.lang = language;
+    document.querySelectorAll(".language-toggle").forEach((button) => {
+      button.textContent = languageButtonLabel(language);
+      button.setAttribute("aria-label", language === "en" ? "Switch language to Japanese" : "Switch language to English");
+    });
+    localStorage.setItem("portfolio-language", language);
+  };
+  document.querySelectorAll(".language-toggle").forEach((button) => button.addEventListener("click", () => applyLanguage(currentLanguage() === "en" ? "ja" : "en")));
+  if (currentLanguage() !== "en") applyLanguage(currentLanguage());
+
   const loader = document.querySelector(".loader");
   const finishLoading = () =>
     window.setTimeout(() => loader?.classList.add("done"), 900);
@@ -32,7 +107,7 @@
     menuButton.setAttribute("aria-expanded", String(!isOpen));
     menuButton.setAttribute(
       "aria-label",
-      isOpen ? "メニューを開く" : "メニューを閉じる",
+      isOpen ? (document.documentElement.lang === "en" ? "Open menu" : "メニューを開く") : (document.documentElement.lang === "en" ? "Close menu" : "メニューを閉じる"),
     );
     navigation?.classList.toggle("open", !isOpen);
   });
@@ -40,7 +115,7 @@
     link.addEventListener("click", () => {
       navigation.classList.remove("open");
       menuButton?.setAttribute("aria-expanded", "false");
-      menuButton?.setAttribute("aria-label", "メニューを開く");
+      menuButton?.setAttribute("aria-label", document.documentElement.lang === "en" ? "Open menu" : "メニューを開く");
     }),
   );
 
